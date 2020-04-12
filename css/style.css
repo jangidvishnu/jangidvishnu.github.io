@@ -55,16 +55,10 @@
     margin-bottom: 0rem;
   }
   
-  .card-deck{
-      margin-top:1vh;
-      margin-bottom:2vh;
-      margin-left:10vw;
-      margin-right:10vw;
-  }
 
   #skillsTitle{
     color:black;
-    font-size: 4vw;
+    font-size: 5vw;
     margin-top: 4.3vh;
     margin-bottom: 0rem;
   }
@@ -74,10 +68,14 @@
       background-color:transparent;
       border: 4px solid black;
       border-radius:15px ;
+      width: 30rem; 
+      margin: auto; 
+      height:75vh; 
+      margin-bottom: 5vh;
   }
   .card img{
       height: 40%;
-      width:80%;
+      width:60%;
       margin:auto;
       margin-top:4px ;
   }
@@ -90,8 +88,26 @@
   }
 
   .card-text{
-      font-size:3.2vh;
+      font-size:3.5vh;
   }
+
+  .carousel-control-next{
+    border:2px solid black;
+    background-color: rgb(1, 63, 63);
+    border-radius: 12px;
+    width:8vh;
+    margin-bottom: 5vh;
+    margin-right: 5px;
+  }
+  .carousel-control-prev{
+    border:2px solid black;
+    background-color: rgb(1, 63, 63);
+    border-radius: 12px;
+    width:8vh;
+    margin-bottom: 5vh;
+    margin-left:5px;
+  }
+  
 
 
                         /* ABOUT SECTION */
@@ -115,16 +131,18 @@
 
 
   #aboutTitle{
-      font-size: 4vw;
+      font-size: 5vw;
       margin-top: 4.3vh;
   }
 
   #aboutText{
+      color:black;
       font-size:4vh;
       text-align: center;
       padding: 3vw;
   }
 
+  
 
                          /*    CONTACT SECTION */
  
@@ -133,7 +151,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-size: 4vw;
+    font-size: 5vw;
     height:100%;
     width: 100%;
     background-color: #cdf3ec;
@@ -231,7 +249,122 @@
     margin-bottom: 0.5rem;
  }                 
  
- /* utilities  */
+                                  /* utilities  */
  .borderred {
     border: 2px solid red;
+  }
+
+                                      /* MEDIA QUERIES */   
+
+  @media (min-width:521px) and (max-width:750px)
+  {
+      /* skills */
+    .card {
+      border: 2px solid black;
+      border-radius:15px ;
+      width: 20rem; 
+      margin: auto; 
+      height:75vh; 
+      margin-bottom: 5vh;
+    }
+  }
+  @media (max-width:520px) and (min-width:301px) {
+    /* skills */
+    .card{
+      border: 2px solid black;
+      border-radius:15px ;
+      width: 13rem; 
+      margin: auto; 
+      height:80vh; 
+      margin-bottom: 5vh;
+    }
+   .card-title{
+    font-size:6vh;
+    text-decoration:underline;
+    margin-bottom: 0.6rem;
+ }
+
+ .card-body{
+   padding: 3px;
+  }
+  .card-text{
+     font-size:0.9rem;
+  }
+   /* Contact */
+   .contact-btn-em{
+    font-size: 2.7vw;
+    width:30vw;
+   }
+   .contact-btn-li{
+    font-size: 2.7vw;
+    width:30vw;
+   }
+   .contact-btn-git{
+    font-size: 2.7vw;
+    width:30vw;
+   }
+   .contact-btn-call{
+    font-size: 2.7vw;
+    width:30vw;
+   }
+/* TITLES */
+   #contactTitle{
+     font-size: 6vw;
+   }
+   #skillsTitle{
+    font-size: 6vw;
+   }
+   #aboutTitle{
+    font-size: 6vw;
+   }
+  }
+
+  @media (max-width:300px){
+    .card{
+      border: 2px solid black;
+      border-radius:15px ;
+      width: 10rem; 
+      margin: auto; 
+      height:80vh; 
+      margin-bottom: 5vh;
+  }
+  .card-title{
+    font-size:5vh;
+    text-decoration:underline;
+    margin-bottom:1px;
+ }
+
+ .card-body{
+   padding: 3px;
+  }
+  .card-text{
+     font-size:0.8rem;
+  }
+   /* Contact */
+   .contact-btn-em{
+    font-size: 4vw;
+    width:50vw;
+   }
+   .contact-btn-li{
+    font-size: 4vw;
+    width:50vw;
+   }
+   .contact-btn-git{
+    font-size: 4vw;
+    width:50vw;
+   }
+   .contact-btn-call{
+    font-size: 4vw;
+    width:50vw;
+   }
+   /* TITLES */
+   #contactTitle{
+    font-size: 8vw;
+  }
+  #skillsTitle{
+   font-size: 8vw;
+  }
+  #aboutTitle{
+   font-size: 8vw;
+  }
   }

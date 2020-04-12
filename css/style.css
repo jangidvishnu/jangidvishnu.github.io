@@ -1,0 +1,237 @@
+*{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+    font-family: 'Baloo Bhai 2', cursive;
+  }
+
+                       /* NAVIGATION BAR */
+
+
+.navbar{
+    position: sticky;
+    top:0px;
+    left:0px;
+  }
+
+                        /*   Home     */
+
+
+  #bg-img::before {
+    content: "";
+    position: absolute;
+    background: url('https://source.unsplash.com/1600x900/?coder') no-repeat center center/cover;
+    height: 100%;
+    width: 99.7%;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  #zarvis {
+    color: rgb(0, 0, 0);
+    font-size: 11vw;
+    margin: 25vh auto;
+    font-weight: bold;
+    font-style: italic;
+    z-index: 4;
+  }
+
+
+  #bg-img {
+    height: 100vh;
+    width: 100%;
+  }
+
+                     /* Skills Section */
+
+
+  #skills{
+    text-align: center;
+    font-size: 1.5vw;
+    height:100%;
+    width: 100%;
+    background-color: teal;
+    border:2px solid black;
+    margin-bottom: 0rem;
+  }
+  
+  .card-deck{
+      margin-top:1vh;
+      margin-bottom:2vh;
+      margin-left:10vw;
+      margin-right:10vw;
+  }
+
+  #skillsTitle{
+    color:black;
+    font-size: 4vw;
+    margin-top: 4.3vh;
+    margin-bottom: 0rem;
+  }
+
+  .card{
+      color:black;
+      background-color:transparent;
+      border: 4px solid black;
+      border-radius:15px ;
+  }
+  .card img{
+      height: 40%;
+      width:80%;
+      margin:auto;
+      margin-top:4px ;
+  }
+
+
+  .card-title{
+      font-size:6vh;
+      text-decoration:underline;
+      margin-bottom: 1rem;
+  }
+
+  .card-text{
+      font-size:3.2vh;
+  }
+
+
+                        /* ABOUT SECTION */
+
+
+  #about{
+    text-align: center;
+    font-size: 3vw;
+    height:100%;
+    width: 100%;
+    background-color: rgb(88, 95, 108);
+    border:2px solid black;
+    margin-bottom: 0rem;
+  }
+
+  #myImage{
+      position: relative;
+      height:5%;
+      width:20%;
+  }
+
+
+  #aboutTitle{
+      font-size: 4vw;
+      margin-top: 4.3vh;
+  }
+
+  #aboutText{
+      font-size:4vh;
+      text-align: center;
+      padding: 3vw;
+  }
+
+
+                         /*    CONTACT SECTION */
+ 
+  #contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 4vw;
+    height:100%;
+    width: 100%;
+    background-color: #cdf3ec;
+    border:4px solid black;
+    margin-bottom: 0rem;
+  } 
+
+  .contact-btn-em{
+    display: block;
+    text-align: center;
+    color: white;
+    width:25vw;
+    padding: 0%;
+    font-size: 1.8vw;
+    border:4px solid red;
+    border-radius: 10px;
+    background-color: red;
+    text-decoration: none;
+    margin:1vh auto;
+    color:white;
+  }
+  .contact-btn-li{
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 0%;
+    width:25vw;
+    font-size: 1.8vw;
+    border:4px solid blue;
+    border-radius: 10px;
+    background-color: blue;
+    text-decoration: none;
+    margin:1vh auto;
+  }
+
+  .contact-btn-git{
+    padding: 0%;
+    text-align: center;
+    color: white;
+    display: block;
+    width:25vw;
+    font-size: 1.8vw;
+    border:4px solid black;
+    border-radius: 10px;
+    background-color:black;
+    text-decoration: none;
+    margin:1vh auto;
+    margin-bottom:5vh;
+  }
+  
+  .contact-btn-call{
+    display: block;
+    text-align: center;
+    color: white;
+    width:25vw;
+    padding: 0%;
+    font-size: 1.8vw;
+    border:4px solid wheat;
+    border-radius: 10px;
+    background-color: wheat;
+    text-decoration: none;
+    color:white;
+    margin:1vh auto;
+  }
+
+  .contact-btn-git:hover{
+      background-color: rgb(228, 225, 225);
+      color:black;
+  }
+
+  .contact-btn-li:hover{
+    background-color: rgb(228, 225, 225);
+    color:black;
+  }
+
+  .contact-btn-em:hover{
+    background-color: rgb(228, 225, 225);
+    color:black;
+  }
+
+  .contact-btn-call:hover{
+    background-color: rgb(228, 225, 225);
+    color:black;
+  }
+
+                        /* FOOTER SECTION  */
+                    
+ .footer{
+     font-size: 2.5vh;
+     background-color: black;
+     color:white;
+     text-align: center;
+ }      
+ .footer p{
+    margin-bottom: 0.5rem;
+ }                 
+ 
+ /* utilities  */
+ .borderred {
+    border: 2px solid red;
+  }
